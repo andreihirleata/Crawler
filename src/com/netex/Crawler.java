@@ -70,8 +70,6 @@ public class Crawler {
         List<WebElement> price = search.findElements(By.className("price"));
 
 
-
-
         try {
 
             for (int i = 0; i < brand.size(); i++) {
@@ -99,10 +97,8 @@ public class Crawler {
 
     public void writeToFile(FileWriter w, String width, String crossSection, String diameter, String brand, String desc, String price) throws IOException{
 
-
         writer.write(width + ";" + crossSection + ";" + diameter + ";" + brand + ";" + desc + ";" + price + "\n");
         writer.flush();
-
 
     }
 }
